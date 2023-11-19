@@ -1,10 +1,11 @@
 import logo from './logo.svg';
+import Navbar from './components/navBarComp/NavbarComp';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello Qtify</h1>
+      <Navbar/>
     </div>
   );
 }

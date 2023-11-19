@@ -1,0 +1,56 @@
+.searchBar {
+    max-width: 568px;
+    width: 568px;
+    height: 48px;
+    position: relative;
+}
+
+.searchBar>input {
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 8px;
+    position: relative;
+}
+.searchBar > button {
+    position: absolute;
+    right: -5px;
+    top: 0px;
+    width: 66px;
+    height: 52px;
+    border: 1px solid black;
+    border-radius:  0px 8px 8px 0px;
+}
+
+.navBar {
+    height: 74px;
+    width: 100%;
+    display: flex;
+    background-color: #34c94b;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.logoDiv {
+    margin: 0px 20px;
+}
+
+.feedbackBtn {
+    background-color: black;
+    color: #34c94b;
+    border-radius: 12px;
+    border: 1px solid black;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0px 20px;
+}
+.feedbackBtn > button {
+    padding: 10px 16px 10px 16px;
+
+    background-color: black;
+    color: #34c94b;
+    border: none;
+    font-weight:600;
+    border-radius: 12px;
+
+}
