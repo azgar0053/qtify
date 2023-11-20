@@ -6,11 +6,11 @@ import './navbar.css'
 
 const Navbar =()=>{
     return(
-        <div className='navBar'>
+        <nav className='navBar'>
             <Logo/>
             <SearchBar/>
             <FeedbackButton text={'Give Feedback'}/>
-        </div>
+        </nav>
     )
 }
 

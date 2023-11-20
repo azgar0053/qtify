@@ -24,6 +24,7 @@ code {
 
 body{
    margin: 0;
+   background-color: var(--color-black);
 }
 
 html, body {

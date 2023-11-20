@@ -3,11 +3,15 @@ import SearchIcon from '../../assets/SearchIcon.svg'
 import './navbar.css'
 
 const SearchBar=()=>{
+
+    const formSubmit=(e)=>{
+        e.preventDefault()
+    }
     return(
-        <div className="searchBar">
+            <form className="searchBar" onSubmit={formSubmit}>
             <input placeholder="     Search a album of your choice"/>
-            <button><img src={SearchIcon} alt="searchIcon"/></button>
-        </div>
+            <button><img src={SearchIcon} alt="searchIcon" type="submit"/></button>
+        </form>
     )
 }  
 
