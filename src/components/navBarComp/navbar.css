@@ -27,7 +27,7 @@
     height: 74px;
     width: 100%;
     display: flex;
-    background-color: #34c94b;
+    background-color: var(--color-primary);
     justify-content:space-between;
     align-items: center;
 }
@@ -38,11 +38,12 @@
 
 .feedbackBtn {
     background-color: black;
-    color: #34c94b;
+    color: var(--color-primary);
     border-radius: 12px;
     border: 1px solid black;
     font-weight: 600;
     font-size: 18px;
+    font-family: 'Poppins' 'sans serif';
     margin: 0px 20px;
     padding: 10px 16px 10px 16px;
     cursor: pointer;
