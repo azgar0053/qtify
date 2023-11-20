@@ -6,7 +6,7 @@ import './navbar.css'
 
 const Navbar =()=>{
     return(
-        <div className="navBar">
+        <div className='navBar'>
             <Logo/>
             <SearchBar/>
             <FeedbackButton text={'Give Feedback'}/>
