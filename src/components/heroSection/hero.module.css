@@ -1,0 +1,35 @@
+.heroSection {
+    width: 100%;
+    height: 270px;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroInnerSection {
+    width: 799px;
+    height: 212px;
+    display: flex;
+    justify-content: center;
+}
+
+.heroInnerSection > div > h1 {
+    font-size: 32px;
+    font-family: 'Poppins' 'sans serif';
+    font-weight: 600;
+    line-height: 48px;
+    text-align: cenetr;
+    margin: 10px;
+}
+.heroText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.heroInnerSection > img {
+    width: 212px;
+    aspect-ratio: 1/1;
+}
