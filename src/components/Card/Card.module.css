@@ -1,6 +1,7 @@
 .wrapper{
     width: 160px;
-
+    height: 232PX;
+    margin: 12PX;
 }
 
 .card{
@@ -9,18 +10,20 @@
     height: 205px;
     border-radius: 10px;
     overflow: hidden;
+    background-color: white;
 }
 
 .chipWrapper {
     position: absolute;
     bottom: 0;
-    top: 0;
+    left: 0;
     width: 100%;
     height: 42px;
     background-color: var(--color-white);
     display: flex;
     align-items: center;
     padding: 6px;
+    
 }
 
 .pill {
@@ -35,9 +38,11 @@
     margin-top: 6px;
     overflow: hidden;
     text-overflow: ellipsis;
-    -webkit-line-clamp: 2;
+    /* -webkit-line-clamp: 2;
     display: -webkit-box;
-    --webkit-box-orient: vertical
+    --webkit-box-orient: vertical; */
+    color: var(--color-white);
+
 }
 
 .chip{

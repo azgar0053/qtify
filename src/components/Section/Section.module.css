@@ -1,0 +1,28 @@
+.mainSection{
+    gap: 32px;
+}
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
+
+.cardWrapper{
+    margin-top: 18px;
+}
+
+.sectionHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: var(--color-white);
+}
+
+.circularProgress{
+    display: flex;
+    justify-content: center;
+}
+.toggleText{
+    cursor: pointer;
+    color: var(--color-primary);
+}
