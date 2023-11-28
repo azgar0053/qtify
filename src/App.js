@@ -3,7 +3,8 @@ import HeroSection from './components/heroSection/HeroSection'
 import './App.css';
 import Section from './components/Section/Section';
 import { useEffect, useState } from 'react';
-import { fetchTopAlbums, fetchNewAlbums, fetchNewSongs } from './components/api/api';
+import GenreTabs from './components/Genre/Genre'
+import { fetchTopAlbums, fetchNewAlbums, fetchNewSongs, fetchGenre } from './components/api/api';
 
 
 function App() {
@@ -20,17 +21,19 @@ function App() {
     getData('topAlbums', fetchTopAlbums)
     getData('newAlbums', fetchNewAlbums)
     getData('Songs', fetchNewSongs)
+    getData('genres', fetchGenre)
   }, [])
 
-  const {topAlbums =[], newAlbums=[], Songs=[]} = data;
+  const {topAlbums =[], newAlbums=[], Songs=[], genres=[]} = data;
   return (
     <div className="App">
       <Navbar/>
       <HeroSection/>
       <Section title='Top Albums' data={topAlbums} type='album' />
       <Section title='New Albums'data={newAlbums} type='album'/>
-      <br/>
-      <Section title='Songs'data={Songs} type='song'/>
+      <hr/>
+      <GenreTabs title='Songs'data={Songs} type='song' genre={genres}/>
+      <hr/>
     </div>
   );
 }
