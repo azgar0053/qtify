@@ -1,6 +1,6 @@
-.mainSection{
+/* .mainSection{
     gap: 32px;
-}
+} */
 .wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -15,6 +15,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-inline:31px ;
     color: var(--color-white);
 }
 
