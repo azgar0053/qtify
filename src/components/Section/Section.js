@@ -10,8 +10,11 @@ const Section=({title, data, type})=>{
     const toggleChange =()=>{
         setCarouselToggle((prevState)=> !prevState)
     }
-    return(
-        <div className={styles.mainSection}>
+    
+        switch (type) {
+            case 'album':{
+                return(
+                    <div className={styles.mainSection}>
                 <div  className={styles.sectionHeader}>
                     <h3 
                     style={{margin:'12px'}}>
@@ -55,6 +58,30 @@ const Section=({title, data, type})=>{
                 </div>
             )}
         </div>
-    )
+                    
+                    )
+            }
+                
+            case 'song':{
+                return(
+                    <div className={styles.mainSection}>
+                        <div  className={styles.sectionHeader}>
+                            <h3 
+                            style={{margin:'12px'}}>
+                                {title}
+                            </h3>
+                        </div>
+                            <Carousel 
+                            data={data} 
+                            renderComponent={(ele)=><Card data={ele} type={type}/>}
+                            />
+                    </div>  
+                )
+            }
+            default:
+                return <></>
+        }
+        
+    
 }
 export default Section;

@@ -37,4 +37,5 @@ body {
 
 .swiper-slide{
   width: auto !important;
+  padding-bottom: 10px !important;
 }

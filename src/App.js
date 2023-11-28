@@ -3,7 +3,7 @@ import HeroSection from './components/heroSection/HeroSection'
 import './App.css';
 import Section from './components/Section/Section';
 import { useEffect, useState } from 'react';
-import { fetchTopAlbums, fetchNewAlbums } from './components/api/api';
+import { fetchTopAlbums, fetchNewAlbums, fetchNewSongs } from './components/api/api';
 
 
 function App() {
@@ -19,15 +19,18 @@ function App() {
   useEffect(()=>{
     getData('topAlbums', fetchTopAlbums)
     getData('newAlbums', fetchNewAlbums)
+    getData('Songs', fetchNewSongs)
   }, [])
 
-  const {topAlbums =[], newAlbums=[]} = data;
+  const {topAlbums =[], newAlbums=[], Songs=[]} = data;
   return (
     <div className="App">
       <Navbar/>
       <HeroSection/>
       <Section title='Top Albums' data={topAlbums} type='album' />
       <Section title='New Albums'data={newAlbums} type='album'/>
+      <br/>
+      <Section title='Songs'data={Songs} type='song'/>
     </div>
   );
 }
